@@ -42,6 +42,8 @@ import {createDefaultStyle, toFunction as toStyleFunction} from '../style/Style.
  * batches will be recreated when no animation is active.
  * @property {boolean} [updateWhileInteracting=false] When set to `true`, feature batches will
  * be recreated during interactions. See also `updateWhileAnimating`.
+ * @property {number} [imageRatio=1] Ratio by which the rendered extent should be larger than the
+ * viewport extent. A larger ratio avoids cut images during panning, but will cause a decrease in performance.
  */
 
 

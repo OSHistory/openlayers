@@ -455,7 +455,7 @@ class KML extends XMLFeature {
   }
 
   /**
-   * @param {Node} node Node.
+   * @param {any} node Node.
    * @param {Array<*>} objectStack Object stack.
    * @private
    * @return {Array<Feature>|undefined} Features.

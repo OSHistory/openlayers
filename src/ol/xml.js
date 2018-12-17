@@ -345,7 +345,7 @@ export const OBJECT_PROPERTY_NODE_FACTORY = makeSimpleNodeFactory();
  * Create an array of `values` to be used with {@link module:ol/xml~serialize} or
  * {@link module:ol/xml~pushSerializeAndPop}, where `orderedKeys` has to be provided as
  * `opt_key` argument.
- * @param {Object<string, V>} object Key-value pairs for the sequence. Keys can
+ * @param {any} object Key-value pairs for the sequence. Keys can
  *     be a subset of the `orderedKeys`.
  * @param {Array<string>} orderedKeys Keys in the order of the sequence.
  * @return {Array<V>} Values in the order of the sequence. The resulting array
@@ -370,7 +370,7 @@ export function makeSequence(object, orderedKeys) {
  * @param {Array<string>} namespaceURIs Namespace URIs.
  * @param {T} structure Structure.
  * @param {Object<string, T>=} opt_structureNS Namespaced structure to add to.
- * @return {Object<string, T>} Namespaced structure.
+ * @return {Object<string, any>} Namespaced structure.
  * @template T
  */
 export function makeStructureNS(namespaceURIs, structure, opt_structureNS) {
