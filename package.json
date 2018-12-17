@@ -24,7 +24,8 @@
     "copy-css": "shx cp src/ol/ol.css build/ol/ol.css",
     "transpile": "shx rm -rf build/ol && shx mkdir -p build && buble --input src/ol --output build/ol --no modules --sourcemap",
     "typecheck": "tsc --pretty",
-    "apidoc": "jsdoc config/jsdoc/api/index.md -c config/jsdoc/api/conf.json -P package.json -d build/apidoc"
+    "apidoc": "jsdoc config/jsdoc/api/index.md -c config/jsdoc/api/conf.json -P package.json -d build/apidoc",
+    "apitypedoc": "typedoc --out /tmp/oldoc/"
   },
   "main": "index.js",
   "repository": {
@@ -38,7 +39,8 @@
   "dependencies": {
     "pbf": "3.1.0",
     "pixelworks": "1.1.0",
-    "rbush": "2.0.2"
+    "rbush": "2.0.2",
+    "typedoc": "^0.13.0"
   },
   "devDependencies": {
     "@openlayers/eslint-plugin": "^4.0.0-beta.1",
