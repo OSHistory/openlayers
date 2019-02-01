@@ -157,7 +157,7 @@ class FeatureFormat {
    * @abstract
    * @param {Document|Node|Object|string} source Source.
    * @param {ReadOptions=} opt_options Read options.
-   * @return {import("../geom/Geometry.js").default} Geometry.
+   * @return {import("../geom/Geometry.js").default|number[]} Geometry.
    */
   readGeometry(source, opt_options) {
     return abstract();

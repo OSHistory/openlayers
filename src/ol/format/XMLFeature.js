@@ -128,7 +128,12 @@ class XMLFeature extends FeatureFormat {
   }
 
   /**
-   * @inheritDoc
+   * Read a single geometry from a source.
+   *
+   * @abstract
+   * @param {Document|Node|Object|string} source Source.
+   * @param {import("./Feature").ReadOptions=} opt_options Read options.
+   * @return {import("../geom/Geometry.js").default|number[]} Geometry.
    */
   readGeometry(source, opt_options) {
     if (!source) {
@@ -158,7 +163,7 @@ class XMLFeature extends FeatureFormat {
    * @param {Node} node Node.
    * @param {import("./Feature.js").ReadOptions=} opt_options Options.
    * @protected
-   * @return {import("../geom/Geometry.js").default} Geometry.
+   * @return {import("../geom/Geometry.js").default|import("../extent.js").Extent|undefined} Geometry.
    */
   readGeometryFromNode(node, opt_options) {
     return null; // not implemented

@@ -470,7 +470,10 @@ class GMLBase extends XMLFeature {
   }
 
   /**
-   * @inheritDoc
+   * @param {Element} node Node.
+   * @param {import("./Feature.js").ReadOptions=} opt_options Options.
+   * @protected
+   * @return {import("../geom/Geometry.js").default|import("../extent.js").Extent|undefined} Geometry.
    */
   readGeometryFromNode(node, opt_options) {
     const geometry = this.readGeometryElement(node,
