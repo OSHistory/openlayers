@@ -370,7 +370,7 @@ export function makeSequence(object, orderedKeys) {
  * @param {Array<string>} namespaceURIs Namespace URIs.
  * @param {T} structure Structure.
  * @param {Object<string, T>=} opt_structureNS Namespaced structure to add to.
- * @return {Object<string, T>} Namespaced structure.
+ * @return {Object} Namespaced structure.
  * @template T
  */
 export function makeStructureNS(namespaceURIs, structure, opt_structureNS) {
